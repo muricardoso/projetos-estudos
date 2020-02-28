@@ -1,0 +1,17 @@
+Estrutura do HTMl(versão dektop e todaas versões mobile incluidas no chrome)
+Encode html entities
+Alt em imagens que fazem sentido a peça, e alta vazio em icones
+links em CTAS
+Salvamento de arquivo (index-local e index)
+nomenclatura de pasta AnoMesDia-Operaçao-task (20190919-NCC-1010494814445)
+nomemclatura de imagens task-ordem (1010494814445-01.jpg)
+Tamanho de do font-size dos textos
+Colocar background-color nas imagens com a cor predominante da mesma
+Corte de imagens icones do mesmo seguimento mantê-las com o mesmo tamanho levando sempre em cosideração o icone maior)
+Footer de acordo com a operção
+
+inputs{
+	
+	urlimg
+	
+}

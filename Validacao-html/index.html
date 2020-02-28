@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Validação de email marketing, para organização e padronização de emails">
+	<meta name="keywords" content="Validação. email marketing, MKT, validação MKT, validação email marketing">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Murilo Cardoso, Jussi">
+	<meta name="viewport" content="width=device-width, initial-scale= 1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Poppins:300,400,600,700,900|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet"  href="css/style.css" >
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerador de arquivo Json</title>
+</head>
+<body>
+    <div id="modal-alert" class="modal-alert">
+       <div class="modal-alert-ok">
+            <p class="modal-http">O caminho da imagem não possui <span>"http://"</span> ou <span>"https://"</span></p>
+            <input type="button" onclick="okCaminhoImg()" class="buttons buttons-modal btn-modal buttons modal-ok" value="Ok,obrigado">
+        </div>   
+    </div>
+    <header class="header">
+        <div class="container">
+        
+            <div class="logo">
+                <p class="author">
+                  <a href="https://github.com/muricardoso/projetos" target="_blank" rel="noopener noreferrer">  Murilo Cardoso</a>
+                </p>
+            </div>
+            
+            <div class="menu v-middle" id="menuS">
+                <nav >
+                    <ul class="">
+                        <a href="index.html"class=" v-middle cliente-select"> 
+                            <li class="line-img v-middle" id="barra-1" onmouseover="hoverItemMenu(this.id)" onmouseout="outItemMenu(this.id)">               
+                                <img  class=" " src="./img/2020-02-28.jpg" alt="">      
+                                <div id='logo-barra-1'class="barra-bottom-select">
+                                    
+                                </div>         
+                            </li>
+                        </a>
+                        <a href="#"  class="v-middle"> 
+                            <li class="line-img " id="barra-2" onmouseover="hoverItemMenu(this.id)" onmouseout="outItemMenu(this.id)">       
+                                <img  class="" src="./img/2020-02-28.jpg" alt="">
+                                <div id='logo-barra-2'class="barra-bottom-select">
+                                    
+                                </div>                  
+                            </li>
+                        </a>
+                        <a href="#" class="v-middle">
+                            <li class="line-img" id="barra-3" onmouseover="hoverItemMenu(this.id)" onmouseout="outItemMenu(this.id)">
+                                <img  class=""  src="./img/2020-02-28.jpg" alt="">
+                                <div id='logo-barra-3'class="barra-bottom-select">
+                                    
+                                </div>       
+                            </li>
+                        </a>
+                        <a href="#"  class="v-middle">
+                            <li class="line-img"  id="barra-4" onmouseover="hoverItemMenu(this.id)" onmouseout="outItemMenu(this.id)">
+                               <img  class="" src="./img/2020-02-28.jpg" alt="">    
+                               <div id='logo-barra-4'class="barra-bottom-select">
+                                    
+                                </div>             
+                            </li>
+                        </a>
+                        <a href="#"  class="v-middle">
+                            <li class="line-img"  id="barra-5" onmouseover="hoverItemMenu(this.id)" onmouseout="outItemMenu(this.id)">           
+                                <img class="" src="./img/2020-02-28.jpg" alt="">
+                                <div id='logo-barra-5'class="barra-bottom-select">
+                                    
+                                </div>       
+                            
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+          
+      </div>
+    </header>
+        <div id="checklist"class="">
+            <form action="">
+                <div class="title-checkList ">
+                    <p class="title">CHECKLIST DE  V<span >ALIDAÇÃO</span> </p>                   
+                    <img src="./img/Rectangle 3.png" alt="" class="box-verde">
+                    <p class="mkt">Página utilizada para validação. Gera um arquivo json e faz o download
+
+                    </p>
+                </div>
+
+                <div id="inputs" class="container">
+                         
+                    <div class="input ">
+                        <input type="checkbox"  class="v-middle checkbox" id="button" value="1" name="button" required>
+                        <label for="button" class="v-middle">Botões</label>
+                        <img  onclick="expandMores(this.id)" id="expand-more-btn" class="v-middle check-expand md-24" src="img/expandMore.svg" alt="">
+
+                        <div id="input-drop-btns" class="expand-more-btn exm input-drop input-secundario">
+                            <div class="input ">
+                                <input type="checkbox"  class="v-middle checkbox" id="linkBotao"value="2" name="linkBotao" required>
+                                <label for="linkBotao"  class="v-middle">link dos botões</label>
+                            </div>
+
+                            <div class="input">
+                                <input type="checkbox"  class="v-middle checkbox" id="altBotao"value="3"  name="altBotao" required>
+                                <label for="altBotao"  class="v-middle">alt nos botões se for imagem</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input inputs-all">
+                        <input type="checkbox"  class="v-middle checkbox" id="text" value="1" name="text" required>
+                        <label for="text" class="v-middle">Texto</label>
+                        <img  onclick="expandMores(this.id)" id="expand-more-text" class="v-middle check-expand md-24" src="img/expandMore.svg" alt="">
+
+                        <div id="input-drop-zips" class="expand-more-text exm input-drop">
+                            <div class="input input-secundario">
+                                <div class="input">
+                                    <input type="checkbox" value="7" class="v-middle checkbox" id="zips" name="encodeCheck" required>
+                                    <label for="encodeCheck"  class="v-middle">Cor das letras </label>
+                                </div>
+                                <div class="input">
+                                    <input type="checkbox" value="7" class="v-middle checkbox" id="zips" name="encodeCheck" required>
+                                    <label for="encodeCheck"  class="v-middle">Tamanho da fonte</label> 
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="input inputs-all">
+                        <input type="checkbox" value="7" class="v-middle checkbox" id="footer" name="footer" required>
+                        <label for="footer"  class="v-middle">Footer de acordo com a operação e número de telefones corretos</label>
+                        
+                    </div>
+    <!----------- Campo Encode sim ou não--------------->
+                    <div class="input inputs-all">
+                            <input type="checkbox" value="7" class="v-middle checkbox" id="encodes" name="encodeCheck" required>
+                            <label for="encodeCheck"  class="v-middle">Vai ter encode?</label>
+                            <div class="input-radio" id="encode">
+                                <div class="input-radio-sim d-inline-block">
+                                    <input type="radio" name="encode" id="sim" value="sim" class="d-inline-block v-middle " >
+                                    <label for="sim"  class="d-inline-block v-middle">Sim</label>
+                                </div>
+                                <div class="input-radio-nao d-inline-block">
+                                    <input type="radio" name="encode" id="nao" value="nao" class="d-inline-block v-middle">
+                                    <label for="nao"  class="d-inline-block v-middle">Não</label>
+                                </div>
+                                
+                            </div>
+                    </div>
+     <!----------------- PASTAS--------------->
+                    <div class="input inputs-all">
+                            <input type="checkbox"  class="v-middle checkbox" id="button" value="1" name="button" required>
+                            <label for="button" class="v-middle">Pasta</label>
+                            <img  onclick="expandMores(this.id)" id="expand-more-zip" class="v-middle check-expand md-24" src="img/expandMore.svg" alt="">
+                        <div id="input-drop-zips" class="expand-more-zip exm input-drop">
+                            <div class="input input-secundario">
+                                <input type="checkbox"  class="v-middle checkbox" id="nomePasta"value="2" name="nomePasta" required>
+                                <label for="nomePasta"  class="v-middle">Nomenclatura da pasta ex: <span class="text-size-color">"anomesdia-operação-idTask"</span></label>
+
+                                <div class="input input-radio-zip">
+                                    <input type="checkbox" value="7" class="v-middle checkbox" id="zips" name="encodeCheck" required>
+                                    <label for="encodeCheck"  class="v-middle">Vai zipar</label>
+                                    
+                                    <div class=" input-zip" id="zip">
+                                        <div class="input-radio-sim d-inline-block">
+                                            <input type="radio" name="zip" id="simzip" value="sim" class="d-inline-block v-middle ">
+                                            <label for="simzip"  class="d-inline-block v-middle">Sim</label>
+                                        </div>
+                                        <div class="input-radio-nao d-inline-block">
+                                            <input type="radio" name="zip" id="naozip" value="nao" class="d-inline-block v-middle">
+                                            <label for="naozip"  class="d-inline-block v-middle">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                <div id="image-drop " class="input image inputs-all">
+    <!----------- Expand More imagens--------------->
+                    <div class="expand-more">
+                            <input type="checkbox" class="v-middle checkbox" id="input-image-drop" value="4"   name="input-image-drop">
+                            <label for="input-image-drop" class="v-middle">Image</label>
+                            <img  onclick="expandMores(this.id)" id="expand-more-img" class="v-middle check-expand md-24" src="img/expandMore.svg" alt="">
+                    </div>
+    <!----------- Campo de validar URL da Imagem--------------->
+                    <div id="input-drop-image " class="expand-more-img exm input-drop input-secundario">
+                        <div class="input " >
+                            <input type="checkbox"  class="v-middle checkbox" id="altImage" value="5"  name="altImage" required>
+                            <label for="altImage"  class="v-middle">Nomenclatura:<span class="text-size-color"> "idDaTask-sequenciaNumerica"</</label>
+                        </div>
+                        <div class="input " >
+                            <input type="checkbox"  class="v-middle checkbox" id="altImage" value="5"  name="altImage" required>
+                            <label for="altImage"  class="v-middle">Alt nas imagens</label>
+                        </div>
+                        <div class="input" >
+                            <input type="checkbox"  class="v-middle checkbox" id="urlImage"value="6"   name="urlImage" required>
+                            <label for="urlImage"  class="v-middle">Link do caminho das imagens correto? com "https://"</label>
+                                
+                            <input type="url" name="url" autocomplete="off" onblur="mascaraUrl()"  id="input-img" class="input-dados v-middle" pattern="https?://.+*" placeholder="https://caminhoDaImagem.com" required>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                
+    <!-- ---------Botões de limpar e validar formulário--------- -->
+                <div id="buttons">
+                    <div class="inputs-buttons">
+                        <input type="button" id="limpar" class="buttons" onclick="limparCampo()" value="Limpar Campos">
+                        <input type="button" id="validar" class="buttons" onclick="validarCampo()" value="Validar Campos" disabled>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="logo-2" id="logo2">
+
+        </div>
+        
+    <!----------- Modal confirmar delete --------->
+        <div id="modal-confirm" class="modal-confirm">
+         <div class="confirm-delete">
+                <p>Deseja deletar todas a informações e marcações do checklist?<p>
+                <div class="inputs-buttons">
+                    <input type="button" class="buttons buttons-modal btn-modal" onclick="confirmar()" value="confirmar"> 
+                    <input type="submit" class="buttons buttons-modal btn-modal" onclick="cancelar()" value="cancelar">
+                </div>
+            </div>        
+        </div> 
+
+      
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>  
+</body>
+</html>

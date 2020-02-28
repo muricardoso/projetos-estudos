@@ -1,0 +1,44 @@
+html{
+    cursor: url(../img/mata_mosca.png) 30 30, auto;
+}
+body{
+ background-image: url(../img/fundo\ 1.jpg)
+    
+}
+.f-left{
+    float: left;
+}
+.mosquito1{
+    width: 50px;
+    height: 50px;
+}
+.mosquito2{
+    width: 70px;
+    height: 70px;
+}
+.mosquito3{
+    width: 90px;
+    height: 90px;
+}
+.LadoA{
+    transform: scalex(1);
+}
+.ladoB{
+    transform: scalex(-1) ;
+}
+/*Criando Cenário*/
+.painel{
+    position: absolute;
+    padding: 10px;
+    width: 190px;
+    left: 0px;
+    bottom: 0px;
+    border-top: solid 1px#fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.cronometro{
+   font-size: 20px ;
+   font-weight: bold;
+}
