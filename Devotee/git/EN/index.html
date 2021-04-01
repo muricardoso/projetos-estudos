@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./sass/style.css">
+    <link rel="shortchut icon" href="./assets/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <script data-ad-client="ca-pub-4813221246235159" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <title>Devotee</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="#"> 
+                    <img src="./assets/logo-branco.svg" alt=""data-alt="altlogo" id="altlogo">
+                    <span><p class="logo-text">Devotee</p> </span> 
+                </a>   
+            </div> 
+            <span class="btn" id="login"></span>
+        </header>
+        <div class="container-main">
+           
+            <article>
+            
+                <div class="container-phone">
+                    <img class="phone" id="srcphone"src="./assets/iPhone@2x.png" alt="Tela de celular mostrando a pagina de matches do aplicativo"data-alt="altphone">
+                </div>
+                <div class="text-describe">
+                    <p class="title" id="title"></p>
+                    <p class="sub-title" id="subtitle"></p>
+                </div>
+                <div class="container-text">
+                    <div class="text-article">
+                        <div class="secondary-text" >
+                            <p id="pimarytext"><p class="line-break" id="subprimarytext"></p>
+                        </div>
+                        <div class="secondary-text">
+                            <p class="line-break" id="secundarytext"></p>
+                            <p id="subsecundarytext"></p>   
+                        </div>
+                        
+                    </div>
+                    <div class="container-btn">
+                        <span class="btn" id="signup"></span>
+                    </div>
+                    <div class="download-app">
+                        <p id="download"></p>
+                        <div class="buttons-download">
+                            <a href="https://play.google.com/store/apps/details?id=com.phurshell.devotee&hl=pt_BR" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/playstore.svg" alt="Botão play store" class="btn-google" id="srcplaystore"data-alt="altplaystore">
+                            </a>
+                            <a href="https://apps.apple.com/br/app/devotee/id1331331692" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/appstore.svg" alt="Botão Apple store" class="btn-apple" id="srcapplestore"data-alt="altapplestore">
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </article>
+        </div>
+        <div class="container-video">
+            <h3 id="videotitle"></h3>
+            <iframe id="srcvideoyoutube" src="https://www.youtube-nocookie.com/embed/8RiURRyasuk?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- modal -->
+        <div id="my-modal-policy" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="content-close">
+                        <div class="close close-policy">&times;</div>
+                    </div>
+                    
+                    <div class="policy-of-pivacy"><p></p></div> 
+                </div>
+                
+            </div>
+        </div>
+        <div id="my-modal-terms" class="modal">
+            <div class="modal-content">
+                <div class="content-close">
+                    <div class="close close-terms">&times;</div>
+                </div>
+                <div class="tab">
+                    <div class="content-terms terms"><a class="tablinks click-terms" data-click="click-terms"  id="tabtermsuse"></a></div>
+                    <div class="content-terms policy-privacy"><a class="tablinks click-policy-privacy" data-click="click-policy-privacy" id="tabpolicyprivacy"></a></div>
+                    <div class="content-terms policy-cookies"><a class="tablinks click-policy-cookies" data-click="click-policy-cookies" id="tabpolicycookies"></a></div>
+                    <div class="content-terms procedures"><a class="tablinks click-procedures" data-click="click-procedures" id="tabprocedures"></a></div>
+                    <div class="content-terms security"><a class="tablinks click-security" data-click="click-security" id="tabsecurity"></a></div>
+                  </div>
+                  
+                <div id="click-terms" class="tabcontent">
+                    <h3 id="tabtitletermsuse"></h3>
+                    <h5 id="tabrevision"></h5>
+                    <p id="termsuse"></p>
+                </div>
+                
+                <div id="click-policy-privacy" class="tabcontent">
+                    <h3 id="tabtitlepolicy"></h3> 
+                     <br>
+                    <p id='policyprivacy'></p> 
+                </div>
+                
+                <div id="click-policy-cookies" class="tabcontent">
+                    <h3 id="tabtitlepolicycookies"></h3><br>
+                    <p id='policycookies'></p>
+                </div>
+                <div id="click-procedures" class="tabcontent">
+                    <h3 id="tabtitleprocedure"></h3><br>
+                    <p id="procedure"></p>
+                </div>
+                <div id="click-security" class="tabcontent">
+                    <h3 id="tabtitlesecurity"></h3> <br>
+                    <p id="security"></p>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="container-footer">
+                <div class="logo-terms">
+                    <div class="logo">
+                        <a href="#"  rel="noopener noreferrer">
+                            <img src="./assets/logo-branco.svg" alt="Logo Devotee" data-alt="altlogo"id="altfootlogo">
+                            <span><p class="logo-text">Devotee</p> </span>
+                        </a>
+                    </div> 
+                    <div class="terms-policy">
+                        <div class="content-terms policy-privacy">
+                            <a  href="./juridico/privacy-policy.html" target="_blank" class="policy-privacy tablinks click-policy-privacy policy my-btn-terms" data-click="click-policy-privacy"  color="#2E2C8A" id="footpolicy"></a>  
+                        </div>
+                        <div class="content-terms terms">
+                            <a href="./juridico/terms.html" target="_blank" class="tablinks click-terms terms my-btn-terms" data-click="click-terms"  color="#2E2C8A" id="footterms"></a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="download-copyright">
+                    <div class="download-app">
+                        <p id="footdownload"></p>
+                        <div class="buttons-download">
+                            <a href="https://play.google.com/store/apps/details?id=com.phurshell.devotee&hl=pt_BR" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/playstore.svg" alt="Botão play store" id="srcfootplaystore" data-alt="altplaystore"></a>
+                            <a href="https://apps.apple.com/br/app/devotee/id1331331692" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/appstore.svg" alt="Botão Apple store" id="srcfootapplestore"data-alt="altapplestore"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="copyright" class="copyright"></div>
+            </div>
+        </footer>
+
+    <script type="text/javascript" src="landing.json"></script>
+    <script src="./js/index.js "></script>
+
+</body>
+</html>
